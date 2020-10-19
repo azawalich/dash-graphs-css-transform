@@ -4,15 +4,12 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
-import mpld3_utils
+import plotly.express as px
 
 external_stylesheets = [dbc.themes.BOOTSTRAP]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-# chart_raw = mpld3_utils.create_mpld3_chart()
-
-import plotly.express as px
 df = px.data.iris() # iris is a pandas DataFrame
 fig = px.scatter(df, x="sepal_width", y="sepal_length")
 
@@ -29,9 +26,6 @@ app.layout = dbc.Container([
         )
     ], id='header'),
     html.Div([
-        # html.Iframe(
-        #     id='frame', width=1500, 
-        #     height=1000, srcDoc=chart_raw)
         dcc.Graph(figure=fig, id='chart')
         ], id='content')
     ], id='page', className="p-5"
