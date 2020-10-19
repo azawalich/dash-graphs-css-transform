@@ -7,13 +7,15 @@ While click/drag events seem to work correctly, the rendering of hover informati
 
 This repository aims to show a workaround for this problem - with changing main charting library rather than paying developers a small fortune ;).
 
-# Problem example
+# Problem example with Plotly
+[click for bigger resolution](https://raw.githubusercontent.com/azawalich/dash-graphs-css-transform/main/plotly.gif)
 ![](plotly.gif)
 
 # Solution
 Workaround requires switching from native [Plotly](https://github.com/plotly/plotly.py) charting library to [mpld3](https://mpld3.github.io/index.html). This framework translates [Matplotlib](http://www.matplotlib.org/) charts to interactive web applications with usage of [D3.js](http://d3js.org/).
 
-# Solution example
+# Solution example with mpld3
+[click for bigger resolution](https://raw.githubusercontent.com/azawalich/dash-graphs-css-transform/main/mpld3.gif)
 ![](mpld3.gif)
 
 # Evaluation
