@@ -12,7 +12,7 @@ This repository aims to show a workaround for this problem - with changing main 
 ![](plotly.gif)
 
 # Solution
-Workaround requires switching from native [Plotly](https://github.com/plotly/plotly.py) charting library to [mpld3](https://mpld3.github.io/index.html). This framework translates [Matplotlib](http://www.matplotlib.org/) charts to interactive web applications with usage of [D3.js](http://d3js.org/).
+Workaround requires switching from [Plotly](https://github.com/plotly/plotly.py) charting library (natively used with dcc.Graph) to [mpld3](https://mpld3.github.io/index.html) (source code output used with html.Iframe). This framework translates [Matplotlib](http://www.matplotlib.org/) charts to interactive web applications with usage of [D3.js](http://d3js.org/).
 
 # Solution example with mpld3
 [click for bigger resolution](https://raw.githubusercontent.com/azawalich/dash-graphs-css-transform/main/mpld3.gif)
