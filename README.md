@@ -7,8 +7,14 @@ While click/drag events seem to work correctly, the rendering of hover informati
 
 This repository aims to show a workaround for this problem - with changing main charting library rather than paying developers a small fortune ;).
 
+# Problem example
+![](plotly.gif)
+
 # Solution
 Workaround requires switching from native [Plotly](https://github.com/plotly/plotly.py) charting library to [mpld3](https://mpld3.github.io/index.html). This framework translates [Matplotlib](http://www.matplotlib.org/) charts to interactive web applications with usage of [D3.js](http://d3js.org/).
+
+# Solution example
+![](mpld3.gif)
 
 # Evaluation
 As our solution solves the initial problem, unfortunately its' success depends highly on your use case:
